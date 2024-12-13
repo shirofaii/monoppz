@@ -1,6 +1,6 @@
 name: monoppz
 colors:
-  editor.background: "#2b2d35"
+  editor.background: "#1e1e1e"
   editor.foreground: "#b9b9b5"
 tokenColors:
   - scope: "unimportant"
@@ -79,6 +79,10 @@ tokenColors:
   - scope: "storage.type.accessor"
     settings:
       foreground: "#4ca587"
+  - scope: "storage.type.operator"
+    settings:
+      foreground: "#4ca587"
+
 
   - scope: "punctuation.terminator"
     settings:
@@ -97,10 +101,11 @@ tokenColors:
       foreground: "#72757c"
   - scope: "punctuation.separator"
     settings:
-      foreground: "#72757c"
-
-      
+      foreground: "#72757c"      
   - scope: "punctuation.definition.string"
+    settings:
+      foreground: "#588e9b"
+  - scope: "punctuation.definition.char"
     settings:
       foreground: "#588e9b"
   - scope: "punctuation.definition.typeparameters"
@@ -110,6 +115,45 @@ tokenColors:
   - scope: "string.quoted"
     settings:
       foreground: "#60c0d2"
+
+# will be overriden by sematic tokens (required for compatibitly)
+
+  - scope: "entity.name.type"
+    settings:
+      foreground: "#b6766b"
+  - scope: "entity.name.function"
+    settings:
+      foreground: "#4ca587"
+  - scope: "entity.name.type"
+    settings:
+      foreground: "#b6766b"
+  - scope: "entity.name.variable"
+    settings:
+      foreground: "#b0c87b"
+  - scope: "entity.name.variable.parameter"
+    settings:
+      foreground: "#d9c679"
+  - scope: "variable.other"
+    settings:
+      foreground: "#d9c679"
+  - scope: "variable.other.property"
+    settings:
+      foreground: "#cea37e"
+  - scope: "constant.numeric"
+    settings:
+      foreground: "#609ad2"
+  - scope: "constant.string"
+    settings:
+      foreground: "#60c0d2"
+  - scope: "constant.character"
+    settings:
+      foreground: "#60c0d2"
+  - scope: "constant.character.escape"
+    settings:
+      foreground: "#588e9b"
+  - scope: "comment"
+    settings:
+      foreground: "#575b65"
 
 
 semanticHighlighting: true
