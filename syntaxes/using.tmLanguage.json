@@ -1,0 +1,15 @@
+{
+  "scopeName": "unimportant.injection",
+  "injectionSelector": "L:source.cs",
+  "patterns": [
+    {
+      "include": "#using"
+    }
+  ],
+  "repository": {
+    "using": {
+      "match": "using",
+      "name": "unimportant"
+    }
+  }
+}

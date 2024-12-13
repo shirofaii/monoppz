@@ -1,0 +1,32 @@
+{
+  "name": "monoppz",
+  "displayName": "monoppz!",
+  "description": "Monakai + eppz!",
+  "version": "0.1.0",
+  "publisher": "shirofaii",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "scripts": {
+    "publish": "vsce package --allow-missing-repository --skip-license"
+  },
+  "contributes": {
+    "grammars": [{
+      "scopeName": "unimportant.injection",
+      "path": "./syntaxes/using.tmLanguage.json",
+      "injectTo": ["source.cs"]
+    }],
+    "themes": [
+      {
+        "id": "monoppz",
+        "label": "monoppz",
+        "uiTheme": "vs-dark",
+        "path": "./themes/monoppz-color-theme.json"
+      }
+    ]
+  }
+}
