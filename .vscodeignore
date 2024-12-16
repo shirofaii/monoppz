@@ -1,3 +1,6 @@
+**/*.afdesign*
+**/*.yaml
+**/*.yml
 .vscode/**
 .vscode-test/**
 .gitignore
